@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Your system must Go installed. This project is working on:
+Install Go. This project is working on:
 
 ```bash
 go version go1.15.5
