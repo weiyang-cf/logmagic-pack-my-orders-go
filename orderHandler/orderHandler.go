@@ -8,9 +8,7 @@ type OrderHandler struct {
 	ContainerSpecs []ContainerSpec
 }
 
-// TODO: OrderHandler should implement Packer interface
-// TODO: feel free to include other methods and functions
-
 func (handler OrderHandler) PackOrder(request OrderRequest) (ShipmentRecord, error) {
+	// TODO: OrderHandler should implement Packer interface. Feel free to include other files, methods and functions...
 	return ShipmentRecord{}, nil
 }

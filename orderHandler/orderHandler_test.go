@@ -6,6 +6,8 @@ import (
 	"testing"
 )
 
+// Helpers
+
 func assertNil(t *testing.T, err error) {
 	if err != nil {
 		t.Error("Failure: An unexpected error occurred!")
@@ -22,6 +24,8 @@ func assertEquals(t *testing.T, expected ShipmentRecord, actual ShipmentRecord) 
 		)
 	}
 }
+
+// Fixture
 
 var handler = OrderHandler{
 	ContainerSpecs: []ContainerSpec{
@@ -45,6 +49,8 @@ var handler = OrderHandler{
 		},
 	},
 }
+
+// Test cases
 
 func TestPackSmallOrder(t *testing.T) {
 	t.Log("SCENARIO: Given a small order, pack the ordered products into a single container with sufficient capacity.")
